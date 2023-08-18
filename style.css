@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    padding: 2%;
+}
+body{
+    background-color: wheat;
+}
+.top{
+    background-color: darkcyan;
+    color: ghostwhite;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+.nav_button{
+    display: grid;
+}
+.service{
+    display : grid;
+    width: 90%;
+    margin: auto;
+    padding: 1%;
+    grid-template-columns: 33% 33% 33%;
+}
+.abt{
+    display: none;
+    padding : 1%;
+    width: 90%;
+    margin: auto;
+}
+.cont{
+    display: none;
+    padding: 1%;
+    width: 90%;
+    margin: auto;
+    text-align: left;
+}
+.contact_us{
+    display: block;
+    padding: 1%;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+
+}
+.contact_us:hover{
+    zoom: 125%;
+}
+#service{
+    background-color: wheat;
+    color: darkcyan;
+    border: none;
+    font-weight: bold;
+    border-radius: 0%;
+}
+#service:hover{
+    cursor: pointer;
+    zoom: 160%;
+}
+#about:hover{
+    cursor: pointer;
+    zoom: 160%;
+}
+#contact:hover{
+    cursor: pointer;
+    zoom: 160%;
+}
+#about, #contact{
+    background-color: darkcyan;
+    color: ghostwhite;
+    border: none;
+    font-weight: bold;
+    border-radius: 0%;
+}
+button{
+    padding: 1%;
+    background-color: darkcyan;
+    border-radius: 50%;
+}
+#nav_cont{
+    color: darkcyan;
+    background-color: ghostwhite;
+}
+#nav_cont:hover{
+    zoom: 120%;
+    cursor: pointer;
+    background-color: coral;
+}
+.nav_cont{
+    margin: 1%;
+    display: grid;
+}
+#nav_cont{
+    padding: 3%;
+    height: 40px;
+}
+#bottom_cont{
+    color: darkcyan;
+    background-color: ghostwhite;
+    margin: 2%;
+    margin-left: 0%;
+}
+#bottom_cont:hover{
+    zoom: 140%;
+    background-color: coral;
+    cursor: pointer;
+}
+
+.submit{
+    width: 50x;
+    background-color: darkcyan;
+    color: ghostwhite;
+    font-weight: bolder;
+    border-radius: 20px;
+    border: none;
+    margin: 2%;
+    padding: 2%;
+}
+.submit:hover{
+    background-color: coral;
+    zoom: 150%;
+}
+input{
+    margin: 2%;
+    padding: 2%;
+    width: 40%;
+    border: none;
+    border-bottom: 2px solid rgb(37, 30, 30);
+    background-color: transparent;
+    color: darkblue;
+    font-weight: bold;
+}
+select{
+    margin: 2%;
+    padding: 2%;
+    width: 40%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid rgb(37, 30, 30);
+    color: darkblue;
+    font-weight: bold;
+}
+.bottom{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    margin: auto;
+    background-color: darkcyan;
+    color: white;
+    padding: 2%;
+    
+}
+#logo{
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    margin: 2%;
+    margin-left: 0%;
+    text-align: left;
+}
+img{
+    width: 100%;
+    height: 200px;
+}
+a{
+    color: black;
+    font-size: medium;
+    text-decoration: none;
+    margin: 10%;
+    padding: 5px;
+}
+figure{
+    text-align: center;
+    height: max-content;
+    margin: 2%;
+}
+figcaption{
+    margin: 2%;
+}
+figure p{
+    text-align: left;
+}
+figure:hover{
+    background-color: coral;
+    cursor: pointer;
+    zoom: 150%;
+    padding: 2%;
+}
+#logo{
+    
+    display: flex;    
+}
+#logo1{
+    text-align: left;
+    margin: 1%;
+    margin-left: 0%;
+    height: 100%;
+    width: 100%;
+}
+.intro{
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+}
+.resToggle{
+    display: none;
+}
+h6{
+    font-weight: lighter;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .service{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    #logo{
+        text-decoration: none;
+        font-size: 24px;
+        color: white;
+        margin: 2%;
+        margin-left: 0%;
+        text-align: left;
+    }
+    input, select{
+        margin: 2%;
+        padding: 2%;
+        width: 65%;
+        border: none;
+        border-bottom: 2px solid rgb(37, 30, 30);
+    }
+    #logo{
+        height: 50%;
+        width: 50%;
+    }
+    .intro{
+        padding: 3%;
+    }
+    .top{
+        display: block;
+        height: auto;
+    }
+    .nav_cont{
+        margin: 2%;
+        justify-content: center;
+        display: none;
+        background-color: darkcyan;
+        align-items: center;
+        width: auto;
+    }
+    h6{
+        display: none;
+    }
+    .resToggle{
+        display: block;
+    }
+    #resButton{
+        width: 100%;
+        border-radius: 0%;
+        font-size: medium;
+        color: antiquewhite;
+    }
+    #resButton:hover{
+        zoom: 130%;
+    }
+    #resButton::after{
+        content: " Expand";
+    }
+    .nav_button{
+        display: none;
+    }
+
+}
