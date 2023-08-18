@@ -1,4 +1,4 @@
-*{
+ *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -72,12 +72,19 @@ body{
     cursor: pointer;
     zoom: 160%;
 }
-#about, #contact{
+#why:hover{
+    cursor: pointer;
+    zoom: 160%;   
+}
+#about, #contact, #why{
     background-color: darkcyan;
     color: ghostwhite;
     border: none;
     font-weight: bold;
     border-radius: 0%;
+}
+.cont{
+    color: black;
 }
 button{
     padding: 1%;
@@ -215,6 +222,10 @@ figure:hover{
 h6{
     font-weight: lighter;
 }
+#nav_cont{
+    height: 35px;
+    width: 35px;
+}
 
 
 
@@ -278,6 +289,10 @@ h6{
     }
     .nav_button{
         display: none;
+    }
+    #nav_cont{
+        height: 40px;
+        width: 40px;
     }
 
 }

@@ -2,14 +2,17 @@ function service(){
     document.getElementById("serv").style.display = "grid";
     document.getElementById("abt").style.display = "none";
     document.getElementById("cont").style.display = "none";
+    document.getElementById("whyDigi").style.display = "none";
 
     document.getElementById("service").style.backgroundColor = "wheat";
     document.getElementById("about").style.backgroundColor = "darkcyan";
     document.getElementById("contact").style.backgroundColor = "darkcyan";
+    document.getElementById("whyDigi").style.backgroundColor = "darkcyan";
 
     document.getElementById("service").style.color = "darkcyan";
     document.getElementById("about").style.color = "ghostwhite";
     document.getElementById("contact").style.color = "ghostwhite";
+    document.getElementById("whyDigi").style.color = "ghostwhite";
     if(window.screen.width<768){
         document.getElementById("resToggle").style.display = "block";
         document.getElementById("nav_contact").style.display = "none";
@@ -23,14 +26,17 @@ function about(){
     document.getElementById("serv").style.display = "none";
     document.getElementById("abt").style.display = "block";
     document.getElementById("cont").style.display = "none";
+    document.getElementById("whyDigi").style.display = "none";
 
     document.getElementById("service").style.backgroundColor = "darkcyan";
     document.getElementById("about").style.backgroundColor = "wheat";
     document.getElementById("contact").style.backgroundColor = "darkcyan";
+    document.getElementById("whyDigi").style.backgroundColor = "darkcyan";
 
     document.getElementById("service").style.color = "ghostwhite";
     document.getElementById("about").style.color = "darkcyan";
-    document.getElementById("contact").style.color = "ghostwhite"; 
+    document.getElementById("contact").style.color = "ghostwhite";
+    document.getElementById("whyDigi").style.color = "ghostwhite"; 
     
     if(window.screen.width<768){
         document.getElementById("resToggle").style.display = "block";
@@ -44,14 +50,40 @@ function contact(){
     document.getElementById("serv").style.display = "none";
     document.getElementById("abt").style.display = "none";
     document.getElementById("cont").style.display = "block";
+    document.getElementById("whyDigi").style.display = "none";
 
     document.getElementById("service").style.backgroundColor = "darkcyan";
     document.getElementById("about").style.backgroundColor = "darkcyan";
     document.getElementById("contact").style.backgroundColor = "wheat";
+    document.getElementById("whyDigi").style.backgroundColor = "darkcyan";
 
     document.getElementById("service").style.color = "ghostwhite";
     document.getElementById("about").style.color = "ghostwhite";
     document.getElementById("contact").style.color = "darkcyan";
+    document.getElementById("whyDigi").style.color = "ghostwhite";
+
+    if(window.screen.width<768){
+        document.getElementById("resToggle").style.display = "block";
+        document.getElementById("nav_contact").style.display = "none";
+        document.getElementById("nav_button").style.display = "none";
+
+    }
+}
+function why(){
+    document.getElementById("serv").style.display = "none";
+    document.getElementById("abt").style.display = "none";
+    document.getElementById("cont").style.display = "none";
+    document.getElementById("whyDigi").style.display = "block";
+
+    document.getElementById("service").style.backgroundColor = "darkcyan";
+    document.getElementById("about").style.backgroundColor = "darkcyan";
+    document.getElementById("contact").style.backgroundColor = "darkcyan";
+    document.getElementById("whyDigi").style.backgroundColor = "wheat";
+
+    document.getElementById("service").style.color = "ghostwhite";
+    document.getElementById("about").style.color = "ghostwhite";
+    document.getElementById("contact").style.color = "ghostwhite";
+    document.getElementById("whyDigi").style.color = "darkcyan";
 
     if(window.screen.width<768){
         document.getElementById("resToggle").style.display = "block";
